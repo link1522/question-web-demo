@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -21,4 +22,7 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
+    // Route::post('/questions', [QuestionController::class, 'store'])->name('voyager.questions.store');
+    // Route::put('questions/{id}', [QuestionController::class, 'update'])->name('voyager.questions.update');
 });
