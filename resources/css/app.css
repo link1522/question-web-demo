@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        font-size: 16px;
+    }
+
+    label,
+    p {
+        @apply text-base font-normal;
+    }
+}
+
+/** tingle modal */
+.tingle-modal__close {
+    @apply !inline-block !w-6;
+}
+
+.tingle-modal-box__footer {
+    @apply text-right;
+}
